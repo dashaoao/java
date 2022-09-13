@@ -1,4 +1,6 @@
-package Pr3;
+package Pr3.Part1;
+
+import Pr3.Part1.Shape;
 
 public class Rectangle extends Shape {
 
@@ -6,15 +8,15 @@ public class Rectangle extends Shape {
     protected double length;
 
     public Rectangle() {
-        this.filled = false;
-        this.color = "blue";
+        filled = false;
+        color = "blue";
         width = 1;
-        length = 1;
+        length = 2;
     }
 
     public Rectangle(double width, double length) {
-        this.filled = false;
-        this.color = "blue";
+        filled = false;
+        color = "blue";
         this.width = width;
         this.length = length;
     }
@@ -54,6 +56,6 @@ public class Rectangle extends Shape {
 
     @Override
     public String toString(){
-        return "Shape: rectangle, width: " + this.width + ", length: " + this.length + ", color: " + this.color;
+        return "Shape: rectangle - width: " + this.width + ", length: " + this.length + ", color: " + this.color;
     }
 }

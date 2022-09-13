@@ -1,16 +1,18 @@
-package Pr3;
+package Pr3.Part1;
+
+import Pr3.Part1.Shape;
 
 public class Circle extends Shape {
     protected double radius;
 
     public Circle(){
-        this.filled = false;
-        this.color = "blue";
+        filled = false;
+        color = "blue";
         radius = 1;
     }
     public Circle(double radius){
-        this.filled = false;
-        this.color = "blue";
+        filled = false;
+        color = "blue";
         this.radius = radius;
     }
     public Circle(double radius, String color, boolean filled){
@@ -36,7 +38,7 @@ public class Circle extends Shape {
 
     @Override
     public String toString() {
-        return "Shape: circle, radius: " + this.radius + ", color: " + this.color;
+        return "Shape: circle - radius: " + this.radius + ", color: " + this.color;
     }
 
 }

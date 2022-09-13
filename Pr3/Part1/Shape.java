@@ -1,4 +1,4 @@
-package Pr3;
+package Pr3.Part1;
 
 import java.lang.Math;
 
@@ -35,6 +35,6 @@ public abstract class Shape {
     abstract double getPerimeter();
 
     public String toString(){
-        return "Color - " + color + ", filled - " + filled;
+        return "color: " + color + ", filled: " + filled;
     }
 }
